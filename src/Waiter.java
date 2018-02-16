@@ -17,6 +17,16 @@ public class Waiter extends Worker{
         return isBusy;
     }
 
+    @Override
+    Boolean getIsBusy() {
+        return getBusy();
+    }
+
+    @Override
+    void setIsBusy(Boolean busy) {
+        setBusy(busy);
+    }
+
     public String getName() {
         return name;
     }

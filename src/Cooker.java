@@ -14,6 +14,16 @@ public class Cooker extends Worker {
         return cookDish;
     }
 
+    @Override
+    Boolean getIsBusy() {
+        return getBusy();
+    }
+
+    @Override
+    void setIsBusy(Boolean busy) {
+        setBusy(busy);
+    }
+
     public String getName() {
         return name;
     }
