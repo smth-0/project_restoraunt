@@ -8,7 +8,7 @@ public class Main_start {
 
         Cooker cooker= new Cooker("Fatish");
         Waiter waiter=new Waiter("Bob",cooker);
-        Client client=new Client(inf,"Adina");
+        Client client=new Client(inf,"Adina",waiter);
 
         client.WouldLike("chicken soup");
         balance+=client.pay(2);
